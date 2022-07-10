@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript | TOTI</title>
+    </head>
+    <body>
+        <h1>AULA 05 - Exercicio | JAVASCRIPT </h1>
+      <script>
+          function person ()  {
+     let firstPerson = prompt("Digite seu nome");
+     console.log(firstPerson);
+     let firstPersonAge = prompt("Digite sua idade");
+     console.log(firstPersonAge);
+     let firstColor = prompt("Digite sua cor preferido");
+     console.log(firstColor)
+     
+     let secondPerson = prompt("Digite seu nome");
+     console.log(secondPerson);
+     let secondPersonAge = prompt("Digite sua idade");
+     console.log(secondPersonAge);
+     let secondColor = prompt("Digite sua cor preferido");
+     console.log(secondColor)
+
+     if(firstPersonAge > secondPersonAge) {
+        console.log(`${firstPerson} é mais velho que ${secondPerson}`)
+     } else if( secondPersonAge >  firstPersonAge) {
+        console.log(`${secondPerson} é mais velho que ${firstPerson}`)
+     } else if(firstPersonAge === secondPersonAge) {
+        console.log(`${firstPerson} e ${secondPerson} possuem a mesma idade`)
+     }
+
+     if(firstColor === secondColor) {
+      console.log(`a cor favorita de ${firstPerson} é a mesma do que ${secondPerson} ${secondColor},`)
+     } else if ( firstColor !== secondColor) {
+      console.log(`${firstPerson} e ${secondPerson} não curtem das mesmas cores`)
+     }
+    
+}
+
+
+person();
+      </script>
+    </body>
+    </html>
